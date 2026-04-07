@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: mock-service-worker:mock-service-worker
     name: Mock Service Worker
-    tags:
-      - API
+    tags: []
     humanURL: https://mswjs.io/
     properties:
       - url: https://mswjs.io/
@@ -16,8 +15,8 @@ apis:
       environments.
 name: Mock Service Worker
 tags:
-  - Mocking
   - Mock Server
+  - Mocking
   - Platform
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
