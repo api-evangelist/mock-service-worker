@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://mswjs.io/vocab#",
+    "schema": "https://schema.org/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "Handler": "https://mswjs.io/vocab#Handler",
+    "RestHandler": "https://mswjs.io/vocab#RestHandler",
+    "GraphQLHandler": "https://mswjs.io/vocab#GraphQLHandler",
+    "WebSocketHandler": "https://mswjs.io/vocab#WebSocketHandler",
+    "SSEHandler": "https://mswjs.io/vocab#SSEHandler",
+    "method": "https://mswjs.io/vocab#method",
+    "path": "https://mswjs.io/vocab#path",
+    "operationName": "https://mswjs.io/vocab#operationName",
+    "response": "https://mswjs.io/vocab#response",
+    "delay": "https://mswjs.io/vocab#delay",
+    "status": "schema:HttpStatusCode"
+  }
+}

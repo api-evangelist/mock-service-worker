@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/mock-service-worker/main/json-schema/mock-service-worker-handler-schema.json",
+  "title": "Mock Service Worker Handler",
+  "description": "Schema describing a Mock Service Worker (MSW) request handler definition. Captures the protocol, matching pattern, and mocked response so handler definitions can be portable across MSW environments.",
+  "type": "object",
+  "required": ["protocol"],
+  "oneOf": [
+    {
+      "title": "REST handler",
+      "properties": {
+        "protocol": { "const": "http" },
+        "method": {
+          "type": "string",
+          "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS", "ALL"]
+        },
+        "path": {
+          "type": "string",
+          "description": "URL pattern, supports path parameters via :param syntax."
+        },
+        "response": { "$ref": "#/$defs/response" }
+      },
+      "required": ["protocol", "method", "path"]
+    },
+    {
+      "title": "GraphQL handler",
+      "properties": {
+        "protocol": { "const": "graphql" },
+        "operationKind": { "type": "string", "enum": ["query", "mutation", "subscription", "operation"] },
+        "operationName": { "type": "string" },
+        "endpoint": { "type": "string", "format": "uri" },
+        "response": { "$ref": "#/$defs/response" }
+      },
+      "required": ["protocol", "operationKind"]
+    },
+    {
+      "title": "WebSocket handler",
+      "properties": {
+        "protocol": { "const": "ws" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["protocol", "url"]
+    },
+    {
+      "title": "Server-Sent Events handler",
+      "properties": {
+        "protocol": { "const": "sse" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["protocol", "url"]
+    }
+  ],
+  "$defs": {
+    "response": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "integer", "minimum": 100, "maximum": 599 },
+        "headers": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "body": {},
+        "delayMs": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}
