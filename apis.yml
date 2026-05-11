@@ -93,6 +93,11 @@ common:
     url: json-ld/mock-service-worker-context.jsonld
   - type: JSONSchema
     url: json-schema/mock-service-worker-handler-schema.json
+  - type: Integrations
+    url: https://mswjs.io/ecosystem
+integrations:
+  - name: Data
+  - name: Source
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
