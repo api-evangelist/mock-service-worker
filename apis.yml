@@ -89,7 +89,7 @@ common:
     url: https://opencollective.com/mswjs
   - type: License
     url: https://github.com/mswjs/msw/blob/main/LICENSE.md
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/mock-service-worker-context.jsonld
   - type: JSONSchema
     url: json-schema/mock-service-worker-handler-schema.json
