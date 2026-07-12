@@ -71,6 +71,8 @@ apis:
   - FN: MSW Maintainers
     url: https://github.com/mswjs/msw
 common:
+- type: DomainSecurity
+  url: security/mock-service-worker-domain-security.yml
 - type: Website
   url: https://mswjs.io/
 - type: Documentation
@@ -97,6 +99,8 @@ common:
   url: json-schema/mock-service-worker-handler-schema.json
 - type: Integrations
   url: https://mswjs.io/ecosystem
+- url: https://mswjs.io/rss.xml
+  type: Blog
 integrations:
 - name: Data
 - name: Source
