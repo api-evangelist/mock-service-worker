@@ -105,6 +105,12 @@ apis:
   - FN: MSW Maintainers
     url: https://github.com/mswjs/msw
 common:
+- type: Plans
+  url: plans/mock-service-worker-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/mock-service-worker-rate-limits.yml
+- type: FinOps
+  url: finops/mock-service-worker-finops.yml
 - type: DomainSecurity
   url: security/mock-service-worker-domain-security.yml
 - type: Website
