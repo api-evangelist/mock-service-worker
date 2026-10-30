@@ -1,4 +1,4 @@
-# Mock Service Worker (mock-service-worker)
+# Mock Service Worker
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,74 +66,126 @@
 
 Mock Service Worker (MSW) is an industry-standard, open-source API mocking library for the browser and Node.js. MSW intercepts outgoing requests at the network level using Service Workers in browsers and a request interception algorithm in Node.js, allowing developers to write client-agnostic mocks for HTTP, GraphQL, WebSocket, and Server-Sent Events and reuse them across any framework, tool, or environment for development, testing, and debugging.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mock-service-worker/refs/heads/main/apis.yml)
+**Areas:** API Mocking · GraphQL · HTTP · Mock Servers · Mocking · Service Worker · Testing · WebSocket
 
-## Scope
+## Mock Service Worker on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Mock Service Worker is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mock-service-worker/](https://apis.io/providers/mock-service-worker/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- API Mocking
-- GraphQL
-- HTTP
-- Mock Server
-- Mocking
-- Service Worker
-- Testing
-- WebSocket
+- [Mock Service Worker](https://apis.io/apis/mock-service-worker/msw/) — Mock Service Worker (MSW) is an open-source library for mocking REST, GraphQL, WebSocket, and Server-Sent Events APIs at the network level. It provides…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-01-08
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### GraphQL (1)
 
-### Mock Service Worker
-Mock Service Worker (MSW) is an open-source library for mocking REST, GraphQL, WebSocket, and Server-Sent Events APIs at the network level. It provides `setupWorker` for browser environments and `setupServer` for Node.js, with handlers (`http`, `graphql`, `ws`, `sse`) that allow developers to declare mocked responses without modifying application code.
+GraphQL schemas.
 
-**Human URL:** [https://mswjs.io/](https://mswjs.io/)
+- [Mock Service Worker GraphQL API](https://apis.io/graphqls/mock-service-worker/mock-service-worker-graphql/)
 
-#### Tags
+#### JSON Schema (1)
 
-- API Mocking, GraphQL, HTTP, Mocking, Service Worker, Testing, WebSocket
+The data models the API reads and writes.
 
-#### Properties
+- [Mock Service Worker Handler](https://apis.io/schemas/mock-service-worker/mock-service-worker-handler/)
 
-- [Documentation](https://mswjs.io/docs/)
-- [Getting Started](https://mswjs.io/docs/quick-start)
-- [HTTP Handler](https://mswjs.io/docs/network-behavior/rest)
-- [GraphQL Handler](https://mswjs.io/docs/network-behavior/graphql)
-- [WebSocket Handler](https://mswjs.io/docs/network-behavior/websocket)
-- [GitHub](https://github.com/mswjs/msw)
-- [Examples](https://github.com/mswjs/examples)
-- [NPM](https://www.npmjs.com/package/msw)
+#### JSON-LD (1)
 
-## Artifacts
+Linked-data contexts for the provider's vocabulary.
 
-| Type | File | Description |
-|------|------|-------------|
-| JSON-LD | [json-ld/mock-service-worker-context.jsonld](json-ld/mock-service-worker-context.jsonld) | Linked-data context for MSW handler entities |
-| JSON Schema | [json-schema/mock-service-worker-handler-schema.json](json-schema/mock-service-worker-handler-schema.json) | Schema describing a portable MSW handler definition for HTTP, GraphQL, WebSocket, and SSE |
+- [Mock Service Worker Context](https://apis.io/jsonld/mock-service-worker/mock-service-worker-context/)
 
-## Common Properties
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Mock Service Worker — jsonschema rules](https://apis.io/rules/mock-service-worker/mock-service-worker-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mock Service Worker Domain Security](https://apis.io/security/mock-service-worker/mock-service-worker-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Mock Service Worker Plans Pricing](https://apis.io/plans/mock-service-worker/mock-service-worker-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Mock Service Worker Rate Limits](https://apis.io/rate-limits/mock-service-worker/mock-service-worker-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Mock Service Worker Finops](https://apis.io/finops/mock-service-worker/mock-service-worker-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://mswjs.io/)
 - [Documentation](https://mswjs.io/docs/)
-- [Getting Started](https://mswjs.io/docs/quick-start)
-- [GitHub](https://github.com/mswjs/msw)
-- [Examples](https://github.com/mswjs/examples)
-- [NPM](https://www.npmjs.com/package/msw)
-- [Discord](https://kettanaito.com/discord)
-- [Sponsor](https://github.com/sponsors/mswjs)
-- [Open Collective](https://opencollective.com/mswjs)
-- [License](https://github.com/mswjs/msw/blob/main/LICENSE.md)
+- [Getting started](https://mswjs.io/docs/quick-start)
+- [Blog](https://mswjs.io/rss.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
-**URL:** https://apievangelist.com
+**Kin Score 18.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 13.2 |
+| Contract governance | 9.8 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 7.9 |
+
+**Agent readiness 1.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mock-service-worker/](https://apis.io/providers/mock-service-worker/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mock Service Worker: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mock-service-worker/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
